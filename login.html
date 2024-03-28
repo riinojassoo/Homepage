@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Log in</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F4AFAB">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="font-family: 'Lucida Handwriting', cursive;">
+                    <img src="images/Logo.jpg" width="30" height="30" alt="">
+                    Ice Cream
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a 
+                                href="#"
+                                class="nav-link dropdown-toggle"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="classicIce.html">Classic Ice Cream</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="frozenIce.html">Frozen Yogurt</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="softIce.html">Soft Ice Cream</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" action="">
+                        <input type="text"
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        >
+                        <button class="btn btn-outline-dark" type="submit">
+                            Search
+                        </button>
+                    </form>
+                    
+                    <a 
+                        href="login.html" 
+                        class="btn btn-outline-dark" 
+                        role="button" 
+                        aria-pressed="true"
+                        style="border-left-width: 0.9px;
+                        margin-left: 9px;"
+                    >
+                        Log in
+                    </a>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="background-color: #ede2e1;">
+        <div class="container">
+            <br>
+            <div class="text-center">
+                <h1>Log in</h1>
+                <br>
+                <p style="font-size: large;">“There’s always room for ice cream.” – Unknown</p>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form action="">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input 
+                        type="email"
+                        id="email"
+                        placeholder="my@email.com"
+                        class="form-control"
+                    >
+                    <br>
+                    <label for="exampleInputPassword" class="form-label">Password:</label>
+                    <input 
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword"
+                        placeholder="*********"
+                    >
+                </form>
+                <br>
+                <button 
+                    class="btn btn-outline-dark" 
+                    type="submit" 
+                    style="text-align: center; width: 100px; height: 40px; margin-left: 15.7rem;"
+                    >
+                    Log in
+                </button>
+                <p class="row justify-content-center my-5">Not a member yet?</p>
+                <a href="newMember.html" class="btn btn-outline-dark" role="button" aria-pressed="true"  style="margin-left: 13.2rem; margin-top: -4rem;">Register as a member</a>
+            </div>
+        </div>
+        <br>
+    </main>
+   
+
+    <footer class="footer mt-auto py-3" style="background-color: #F4AFAB">
+        <div class="container d-flex justify-content-between">
+            <span class="text-muted">
+                Ice Cream OÜ | &copy; 2010 - 2024 IceCream&trade;
+            </span>
+            <span class="text-muted">
+                &copy; All Rights Reserved
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
