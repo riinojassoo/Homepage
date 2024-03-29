@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>Document</title>
+    <title>Frozen yoghurt</title>
+    <script>
+        function scrollToMiddle() {
+            // Scroll to the element with id "middle" smoothly
+            document.getElementById('middle').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+
 </head>
 <body>
     <header>
@@ -81,13 +88,129 @@
                     >
                         Log in
                     </a>
-                
                 </div>
             </div>
         </nav>
     </header>
 
-   
+    <main style="background-color: #ede2e1;">
+        <div class="p-5 text-center bg-image" style="
+        background-image: url(images/hero3.jpg);
+        height: 700px;"
+        >
+            <div class="mask">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Frozen yogurt</h1>
+                        <h4 class="mb-3">So many different combinations!</h4>
+                        <h4 class="mb-3">Mix it up and combine different flavors or create your cup with just your favorite.</h4>
+                        <button  class="btn btn-outline-light btn-lg" onclick="scrollToMiddle()">Start choosing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <br>
+            <br>
+            <div id="middle"></div>
+            <div class="card-group">  
+                <div class="card" style="margin-right: 1rem;">
+                    <img class="card-img-top" src="images/cream.jpg" alt="Cookies">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookies and Cream</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Small: 3€</li>
+                        <li class="list-group-item">Medium: 5€</li>
+                        <li class="list-group-item">Large: 7.50€</li>
+                    </ul>
+                </div>
+                    <div class="card" style="margin-right: 1rem;">
+                        <img class="card-img-top" src="images/pina.jpg" alt="pinacolada">
+                        <div class="card-body">
+                            <h5 class="card-title">Pina Colada</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Small: 3€</li>
+                            <li class="list-group-item">Medium: 5€</li>
+                            <li class="list-group-item">Large: 7.50€</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="margin-right: 1rem;">
+                        <img class="card-img-top" src="images/cheesecake.jpg" alt="cheesecake">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry Cheesecake</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Small: 3€</li>
+                            <li class="list-group-item">Medium: 5€</li>
+                            <li class="list-group-item">Large: 7.50€</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/green.jpg" alt="mochi">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Tea Mochi</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Small: 3€</li>
+                            <li class="list-group-item">Medium: 5€</li>
+                            <li class="list-group-item">Large: 7.50€</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="card-group">
+                    <div class="card" style="margin-right: 1rem;">
+                        <img class="card-img-top" src="images/keylime.jpg" alt="Keylime">
+                        <div class="card-body">
+                            <h5 class="card-title">Keylime Pie</h5>
+                    </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Small: 3€</li>
+                            <li class="list-group-item">Medium: 5€</li>
+                            <li class="list-group-item">Large: 7.50€</li>
+                        </ul>
+                    </div>
+                        <div class="card" style="margin-right: 1rem;">
+                            <img class="card-img-top" src="images/mint.jpg" alt="mint">
+                            <div class="card-body">
+                                <h5 class="card-title">Mint Chocolate Chip</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Small: 3€</li>
+                                <li class="list-group-item">Medium: 5€</li>
+                                <li class="list-group-item">Large: 7.50€</li>
+                            </ul>
+                        </div>
+                        <div class="card" style="margin-right: 1rem;">
+                            <img class="card-img-top" src="images/almond.jpg" alt="Almond">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Almond</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Small: 3€</li>
+                                <li class="list-group-item">Medium: 5€</li>
+                                <li class="list-group-item">Large: 7.50€</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/red.jpg" alt="Red Velvet">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Velvet</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Small: 3€</li>
+                                <li class="list-group-item">Medium: 5€</li>
+                                <li class="list-group-item">Large: 7.50€</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
 
     <footer class="footer mt-auto py-3" style="background-color: #F4AFAB">
         <div class="container d-flex justify-content-between">
@@ -99,5 +222,8 @@
             </span>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

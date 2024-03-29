@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <title>Document</title>
+    <title>Classics</title>
+    <script>
+        function scrollToMiddle() {
+            // Scroll to the element with id "middle" smoothly
+            document.getElementById('middle').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+    
 </head>
 <body>
     <header>
@@ -87,6 +94,80 @@
         </nav>
     </header>
 
+    <main style="background-color: #ede2e1;">
+        <div class="p-5 text-center bg-image" style="
+        background-image: url(images/hero1-1.jpg);
+        height: 700px;"
+        >
+            <div class="mask">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Classic Ice Cream</h1>
+                        <h4 class="mb-3">We have the best classics!</h4>
+                        <h4 class="mb-3">You can choose between 1, 2, 3 or ever 4 scoops!</h4>
+                        <button  class="btn btn-outline-light btn-lg" onclick="scrollToMiddle()">Start choosing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <br>
+            <br>
+            <div class="card-group">
+                <div class="card" style="margin-right: 1rem;">        
+                    <img class="card-img-top" src="images/choco.jpg" alt="Choco">
+                        <div class="card-body">
+                        <h5 class="card-title">Chocolate Cone</h5>
+                        </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">One scoop: 3€</li>
+                        <li class="list-group-item">Two scoops: 5€</li>
+                        <li class="list-group-item">Three scoops: 7.50€</li>
+                        <li class="list-group-item">Four scoops: 10€</li>
+                    </ul>
+                </div>
+                <div class="card" style="margin-right: 1rem;">
+                    <img class="card-img-top" src="images/vanilla.jpg" alt="Vanilla">
+                        <div class="card-body">
+                            <h5 class="card-title">Vanilla Cone</h5>
+                        </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">One scoop: 3€</li>
+                        <li class="list-group-item">Two scoops: 5€</li>
+                        <li class="list-group-item">Three scoops: 7.50€</li>
+                        <li class="list-group-item">Four scoops: 10€</li>
+                    </ul>
+                </div>
+                <div class="card" style="margin-right: 1rem;">
+                    <img class="card-img-top" src="images/strawberry.jpg" alt="Strawberry">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry Cone</h5>
+                        </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">One scoop: 4€</li>
+                        <li class="list-group-item">Two scoops: 6€</li>
+                        <li class="list-group-item">Three scoops: 8€</li>
+                        <li class="list-group-item">Four scoops: 11€</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/pistachio.jpg" alt="Pistachio">
+                        <div class="card-body">
+                            <h5 class="card-title">Pistachio Cone</h5>
+                        </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">One scoop: 4€</li>
+                        <li class="list-group-item">Two scoops: 6€</li>
+                        <li class="list-group-item">Three scoops: 8€</li>
+                        <li class="list-group-item">Four scoops: 11€</li>
+                    </ul>
+                    <div id="middle"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
    
 
     <footer class="footer mt-auto py-3" style="background-color: #F4AFAB">
@@ -99,5 +180,8 @@
             </span>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
