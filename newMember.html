@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F4AFAB">
             <div class="container">
                 <a class="navbar-brand" href="index.html" style="font-family: 'Lucida Handwriting', cursive;">
-                    <img src="images/Logo.jpg" width="30" height="30" alt="">
+                    <img src="images/logo3.jpg" width="40" height="40" alt="" style="opacity: 0.5;">
                     Ice Cream
                 </a>
                 <button
@@ -81,14 +81,80 @@
                     >
                         Log in
                     </a>
-                
                 </div>
             </div>
         </nav>
     </header>
 
     <main style="background-color: #ede2e1;">
-
+        <div class="container">
+            <br>
+            <div class="text-center">
+                <h1>Register as a new member</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-row">
+                <div class="col" style="margin-top: 3rem; margin-bottom: 1rem;">
+                    <label for="inputFirstName">First Name:</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                </div>
+                <div class="col" style="margin-top: 3rem; margin-bottom: 1rem;">
+                    <label for="inputLastName">Last Name:</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password:</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address:</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City:</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCountry">Country:</label>
+                    <select id="inputCountry" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Estonia</option>
+                        <option>Finland</option>
+                        <option>Germany</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip:</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I agree to the terms
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Send me newsletters
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-outline-dark" style="margin-bottom: 3rem;">Register</button>
+            </form>
+        </div>
     </main>
 
     <footer class="footer mt-auto py-3" style="background-color: #F4AFAB">
